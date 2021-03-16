@@ -53,6 +53,7 @@ ul, li {
 
 .slider__dots {
     display: flex;
+    margin: 0 0 0 200px;
 }
 
 .slider__btn {
@@ -70,6 +71,7 @@ ul, li {
     height: 15px;
     font-size: 0;
     background-color: red;
+    margin: 0 4px;
 }
 .dot-active {
     background-color: blue;
