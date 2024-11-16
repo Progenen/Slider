@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Manrope;
+}
+
+.objects {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.objects__container {
+    position: relative;
+}
+
+.objects__slider {
+    width: 100%;
+    max-height: 900px;
+    display: flex;
+    position: relative;
+}
+
+
+.objects__item-inner {
+    position: relative;
+}
+
+.objects__slider .slick-slide:nth-child(even) .objects__item-text{
+    left: 15%;
+}
+
+.objects__item-text {
+    position: absolute;
+    right: 15%;
+    bottom: 20%;
+    width: 50%;
+
+}
+
+.objects__item-title {
+    font-family: Manrope;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 54.64px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.objects__item-descr {
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.32px;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.objects__item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.objects__nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.objects__nav-arrow {
+    height: 78px;
+    width: 84.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C2127E5;
+    border: none;
+    cursor: pointer;
+}
+
+.objects__nav-arrow svg path {
+    stroke: #5C5E64;
+    fill: #5C5E64;
+}
+
+.objects__nav-arrow:hover svg path{
+    stroke: #fff;
+    fill: #fff;
+}
+
+.objects__nav-arrow:focus svg path{
+    stroke: #fff;
+    fill: #fff;
+}
+
+
+.objects__nav-arrow--prev svg {
+    transform: rotate(180deg);
+}
+
+.objects__nav-arrow svg {
+    display: block;
+}
+
+.objects__nav-arrow svg path {
+    transition: .2s;
+}
+
+@media (max-width:1220px){
+    .objects__nav-arrow {
+        width: 60px;
+        height: 40px;
+    }
+}
+
+@media (max-width:890px) {
+    .objects__item {
+        width: 100%;
+        height: 365px;
+        display: block !important;
+    }
+
+    .objects__item-inner {
+        height: 100%;
+    }
+
+
+    .objects__item-text {
+        left: 15% !important;
+        font-size: 20px;
+    }
+    
+    .objects__item-descr {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .objects__item-title {
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    .objects__nav-arrow {
+        width: 43px;
+        height: 40px;
+    }
+
+    .objects__nav-arrow svg {
+        width: 8px;
+    }
+}
+
